@@ -1,8 +1,9 @@
 
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/Navbar'
 import Header from '../components/Header'
 import Section from '../components/Section/Section'
 import Footer from '../components/Footer/Footer'
+
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Header/>
       <Section/>
       <Footer/>
+
     </>
   )
 }

@@ -1,7 +1,7 @@
 
 import About from './About'
 import Contact from './Contact'
-import ProstfolioList from './ProstfolioList'
+import ProstfolioList from './Portfolio/ProstfolioList'
 
 const Section = () => {
   return (

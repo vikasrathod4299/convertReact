@@ -1,6 +1,5 @@
 import avatar from '../assets/img/avataaars.svg'
-import Logo from './Logo'
-import Divider from './Divider'
+import Divider from './Util/Divider'
 const Header = () => {
   return (
     <header className="masthead bg-primary text-white text-center">
@@ -9,7 +8,7 @@ const Header = () => {
 
         <img className="masthead-avatar mb-5" src={avatar} alt="..." />
 
-        <h1><Logo /></h1>
+        <h1 className="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
         
         <Divider color={'light'}/>
         

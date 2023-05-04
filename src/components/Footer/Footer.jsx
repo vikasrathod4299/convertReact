@@ -1,6 +1,6 @@
 import Location from './Location'
 import SocialLinks from './SocialLinks'
-import AboutFreelancer from './AboutFreeLancer'
+import AboutFreelancer from './AboutFreelancer'
 import Copyright from "./Copyright";
 
 const Footer = () => {

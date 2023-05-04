@@ -1,7 +1,7 @@
-import Heading from '../Heading'
-import Divider from '../Divider'
-import Input from '../Input'
-import Textarea from '../Textarea'
+import Heading from '../Util/Heading'
+import Divider from '../Util/Divider'
+import Input from '../Util/Input'
+import Textarea from '../Util/Textarea'
 
 const Contact = () => {
   return (

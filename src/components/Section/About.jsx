@@ -1,6 +1,6 @@
 
-import Heading from '../Heading'
-import Divider from '../Divider'
+import Heading from '../Util/Heading'
+import Divider from '../Util/Divider'
 
 
 const About = () => {
