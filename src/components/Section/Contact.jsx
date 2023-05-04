@@ -9,7 +9,7 @@ const Contact = () => {
             <div className="container">
 
  
-            <Heading color={'black'} body={'Contact me'}/>
+            <Heading color={'dark'} body={'Contact me'}/>
   
             <Divider color={'dark'}/>
  
@@ -18,13 +18,38 @@ const Contact = () => {
     
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
 
-                            <Input id={'name'} type={'text'} label={'Full name'} placeholder={'Enter your name...'} validations={'required'}/>
+                            {/* <Input id={'name'} type={'text'} label={'Full name'} placeholder={'Enter your name...'} validations={'required'}/>
 
                             <Input id={'email'} type={'email'} label={'Email address'} placeholder={'name@example.com'} validations={'required,email'}/>
 
                             <Input id={'phone'} type={'tel'} label={'Phone number'} placeholder={'(123) 456-7890'} validations={'required'}/>
 
-                            <Textarea style={{height:'10rem'}} id={'message'} type={'text'} label={'Message'} placeholder={'Enter your message here'} validations={'required'}/>
+                            <Textarea style={{height:'10rem'}} id={'message'} type={'text'} label={'Message'} placeholder={'Enter your message here'} validations={'required'}/> */}
+
+                            <div className="form-floating mb-3">
+                                <input className="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label htmlFor="name">Full name</label>
+                                <div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            
+                            <div className="form-floating mb-3">
+                                <input className="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label htmlFor="email">Email address</label>
+                                <div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            
+                            <div className="form-floating mb-3">
+                                <input className="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label htmlFor="phone">Phone number</label>
+                                <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            
+                            <div className="form-floating mb-3">
+                                <textarea className="form-control" id="message" type="text" placeholder="Enter your message here..." style={{height: "10rem"}} data-sb-validations="required"></textarea>
+                                <label htmlFor="message">Message</label>
+                                <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
 
                             <div className="d-none" id="submitSuccessMessage">
                                 <div className="text-center mb-3">

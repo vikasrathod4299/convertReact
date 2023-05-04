@@ -1,4 +1,3 @@
-
 import Heading from '../Util/Heading'
 import Divider from '../Util/Divider'
 
@@ -18,10 +17,7 @@ const About = () => {
         </div>
 
         <div className="text-center mt-4">
-        <a className="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-            <i className="fas fa-download me-2"></i>
-            Free Download!
-        </a>
+          <a className="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/"><i className="fas fa-download me-2"></i>{' '}Free Download!</a>
         </div>
     
     </div>
