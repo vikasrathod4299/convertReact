@@ -12,11 +12,12 @@ const Navbar = () => {
         if (window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
+
             navbarCollapsible.classList.add('navbar-shrink')
         }
     };
 
-    document.addEventListener('scroll', navbarShrink);
+    document.addEventListener('scroll',navbarShrink)
 
     const mainNav = document.body.querySelector('#mainNav');
     
