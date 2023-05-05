@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/prop-types */
 
-import Divider from "../../Util/Divider"
-import Heading from "../../Util/Heading"
+import Divider from "../../shared/Divider"
+import Heading from "../../shared/Heading"
 
 // eslint-disable-next-line react/prop-types
 const PortfolioModel = ({post}) => {

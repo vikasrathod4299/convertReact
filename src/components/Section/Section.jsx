@@ -1,12 +1,12 @@
 
 import About from './About'
 import Contact from './Contact'
-import ProstfolioList from './Portfolio/ProstfolioList'
+import Portfolio from './Portfolio/Portfolio'
 
 const Section = () => {
   return (
     <div>
-      <ProstfolioList/>
+      <Portfolio/>
       <About/>
       <Contact/>
     </div>

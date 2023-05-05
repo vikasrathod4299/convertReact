@@ -1,5 +1,5 @@
 import avatar from '../../assets/img/avataaars.svg'
-import Divider from '../Util/Divider'
+import Divider from '../shared/Divider'
 const Header = () => {
   return (
     <header className="masthead bg-primary text-white text-center">

@@ -1,5 +1,5 @@
-import Heading from '../Util/Heading'
-import Divider from '../Util/Divider'
+import Heading from '../shared/Heading'
+import Divider from '../shared/Divider'
 
 
 const About = () => {
