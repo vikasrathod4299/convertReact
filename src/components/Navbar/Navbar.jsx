@@ -7,19 +7,15 @@ const Navbar = () => {
     const [isShrink, setIsShrink] = useState(false);
 
     function navbarShrink() {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return
-        }
         if (window.scrollY === 0) {
             setIsShrink(false)
         } else {
             setIsShrink(true)
-
         }
     }
     
     useEffect(()=>{
+        
         window.addEventListener('scroll',navbarShrink)
 
         new bootstrap.ScrollSpy(document.body, {
@@ -31,10 +27,11 @@ const Navbar = () => {
 
     },[])
 
+
         
    return (
              // eslint-disable-next-line react/no-unknown-property
-             <nav className={`navbar ${isShrink?'navbar-shrink':null} navbar-expand-lg bg-secondary text-uppercase fixed-top`} id="mainNav">
+             <nav className={`navbar ${isShrink?'navbar-shrink':null} navbar-expand-lg bg-secondary text-uppercase fixed-top`} id="mainNav" >
                  <div className="container">
                      
                      <Logo className={'navbar-brand'}/>

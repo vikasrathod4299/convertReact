@@ -6,7 +6,7 @@ import Textarea from '../shared/Textarea'
 import {useForm} from 'react-hook-form'
 
 const Contact = () => {
-    const {handleSubmit, register, formState:{errors}} = useForm();
+    const {handleSubmit, register, formState:{errors}} = useForm({mode:'all'});
 
     const onSubmit = (data)=>{
         console.log(data)
@@ -16,7 +16,6 @@ const Contact = () => {
     <section className="page-section" id="contact">
             <div className="container">
 
- 
             <Heading color={'dark'} body={'Contact me'}/>
   
             <Divider color={'dark'}/>
@@ -46,7 +45,7 @@ const Contact = () => {
           
                             <div className="d-none" id="submitErrorMessage"><div className="text-center text-danger mb-3">Error sending message!</div></div>
                 
-                            <button className="btn btn-primary btn-xl" >Send</button>
+                            <button className="btn btn-primary btn-xl" disabled={Object.values(errors).length>0}>Send</button>
                         </form>
                     </div>
                 </div>
